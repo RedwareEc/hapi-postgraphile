@@ -1,0 +1,25 @@
+{
+  "name": "@redware/hapi-postgraphile",
+  "version": "1.0.0",
+  "description": "Plugin to create a rest routes",
+  "author": "Andres Navarrete",
+  "license": "MIT",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "scripts": {
+    "build:ts": "ttsc -p tsconfig.build.json",
+    "watch": "ttsc -p tsconfig.build.json -w",
+    "test": "jest",
+    "prepare": "yarn build:ts"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@redware/postgraphile-orm": "^3.0.3",
+    "consola": "^2.15.3"
+  },
+  "gitHead": "3e2da40e6dbc15180f184e9b48f0895aba0e0e9c"
+}
